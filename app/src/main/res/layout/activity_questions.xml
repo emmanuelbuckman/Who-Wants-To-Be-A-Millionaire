@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".QuestionsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_gravity="center">
+
+        <TextView
+            android:id="@+id/question"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:text="In what children's game are participants chased by someone designated 'it'?"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:padding="5dp"
+            android:textStyle="bold"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/logo" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:max="10"
+                android:minHeight="50dp"
+                android:progress="0"
+                android:indeterminate="false"
+                style="?android:attr/progressBarStyleHorizontal"
+                />
+
+            <TextView
+                android:id="@+id/tvProgress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="15dp"
+                android:textSize="14sp"
+                tools:text="$0"/>
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/optionZero"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/default_option_borders"
+            android:gravity="center"
+            android:padding="15dp"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            tools:text="Tag"/>
+
+        <TextView
+            android:id="@+id/optionOne"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:background="@drawable/default_option_borders"
+            android:padding="15dp"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            tools:text="Simon Says"/>
+
+        <TextView
+            android:id="@+id/optionTwo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:background="@drawable/default_option_borders"
+            android:padding="15dp"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            tools:text="Charades"/>
+
+        <TextView
+            android:id="@+id/optionThree"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:background="@drawable/default_option_borders"
+            android:padding="15dp"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            tools:text="Hopscotch"/>
+
+        <Button
+            android:id="@+id/subBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Submit"
+            android:textStyle="bold"/>
+
+
+    </LinearLayout>
+
+
+</ScrollView>
